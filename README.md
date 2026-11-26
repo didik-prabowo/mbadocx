@@ -1,9 +1,9 @@
 <div align="center">
   <img src="./mbadocx.svg" alt="Mbadocx - Go DOCX Library" width="250">
   
-  **Go library for creating, reading and manipulating DOCX files**
+  **Go library for creating DOCX files in code**
   
-  ![Go Version](https://img.shields.io/badge/Go-1.16+-00ADD8)
+  ![Go Version](https://img.shields.io/badge/Go-1.19+-00ADD8)
  [![Go Reference](https://pkg.go.dev/badge/github.com/didikprabowo/mbadocx.svg)](https://pkg.go.dev/github.com/didikprabowo/mbadocx)
   [![Go Report Card](https://goreportcard.com/badge/github.com/didikprabowo/mbadocx)](https://goreportcard.com/report/github.com/didikprabowo/mbadocx)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -25,7 +25,7 @@ It provides a modular, extensible API for generating Word documents with advance
 - ✅ **Hyperlinks** - Add clickable links to documents
 - ✅ **Line Breaks** - Control document flow
 - ✅ **Fluent API** - Chainable methods for clean code
-- ✅ **Pure Go** - No external dependencies required
+- ✅ **Pure Go** - No cgo; the only dependency is `github.com/google/uuid`
 
 ### Examples
 - [Basic Document](./example/basic)
@@ -44,8 +44,8 @@ It provides a modular, extensible API for generating Word documents with advance
 ## Installation
 
 ### Requirements
-- Go 1.16 or higher
-- No external dependencies required
+- Go 1.19 or higher (as `go.mod` requires)
+- One dependency, `github.com/google/uuid`, fetched by `go get`
 
 ### Install via go get
 
